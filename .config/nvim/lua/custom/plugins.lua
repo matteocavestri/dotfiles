@@ -106,5 +106,9 @@ local plugins = {
       require("codesnap").setup(opts)
     end
   }, ]]--
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  }
 }
 return plugins
