@@ -11,15 +11,21 @@ else
 fi
 
 install_with_apt() {
-    sudo apt update && sudo apt install -y git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow
-}
+    sudo apt update && sudo apt install -y git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    curl -sS https://starship.rs/install.sh | sh
+  }
 
 install_with_dnf() {
-    sudo dnf install -y git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow
+    sudo dnf install -y git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    curl -sS https://starship.rs/install.sh | sh
 }
 
 install_with_pacman_and_paru() {
-    sudo pacman -Syu --noconfirm git base-devel python nodejs neofetch neovim zsh tmux rust stow 
+    sudo pacman -Syu --noconfirm git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    curl -sS https://starship.rs/install.sh | sh
     if ! command -v paru > /dev/null; then
         cd /tmp
         git clone https://aur.archlinux.org/paru.git
