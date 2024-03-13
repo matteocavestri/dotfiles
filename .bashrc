@@ -24,7 +24,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-export PATH=$PATH:/usr/lib/openfoam/openfoam2306/wmake
+# export PATH=$PATH:/usr/lib/openfoam/openfoam2306/wmake
 eval "$(starship init bash)"
 
 

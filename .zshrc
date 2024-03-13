@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias update="bash $HOME/.scripts/update.sh"
+alias status="bash $HOME/.scripts/status.sh"
 #
 #
 # eval "$(starship init zsh)"

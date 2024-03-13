@@ -1,0 +1,3 @@
+alias update="bash $HOME/.scripts/update.sh"
+alias status="bash $HOME/.scripts/status.sh"
+
