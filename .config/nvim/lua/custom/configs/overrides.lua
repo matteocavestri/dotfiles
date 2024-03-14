@@ -8,7 +8,7 @@ M.mason = {
 
     -- web dev stuff
     "typescript-language-server",
-    "eslint_d",
+    "eslint-lsp",
     "prettier",
     "js-debug-adapter",
     "tailwindcss-language-server",
@@ -17,6 +17,16 @@ M.mason = {
     "clangd",
     "clang-format",
     "codelldb",
+
+    -- rust
+    "rust-analyzer",
+
+    -- python
+    "pyright",
+    "ruff-lsp",
+    "mypy",
+    "black",
+    "debugpy",
   },
 }
 
