@@ -109,3 +109,4 @@ alias status="bash $HOME/.scripts/status.sh"
 #
 # eval "$(starship init zsh)"
 # Created by newuser for 5.9
+eval "$(zoxide init --cmd cd zsh)"

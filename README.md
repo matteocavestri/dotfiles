@@ -1,6 +1,7 @@
 # My dotfiles
 
 This directory contains the dotfiles for my system
+Read the docs
 
 ## Requirements
 

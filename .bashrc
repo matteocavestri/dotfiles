@@ -26,5 +26,6 @@ unset rc
 
 # export PATH=$PATH:/usr/lib/openfoam/openfoam2306/wmake
 eval "$(starship init bash)"
+eval "$(zoxide init --cmd cd bash)"
 
 neofetch
