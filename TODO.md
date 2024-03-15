@@ -3,7 +3,6 @@
 ### Neovim
 
 - javascript-typescript debugger
-- rust debugger
 - go support (lsp, formatting, debugger)
 
 ### ZSH

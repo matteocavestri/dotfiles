@@ -46,11 +46,21 @@ M.crates = {
 M.dap_python = {
   plugin = true,
   n = {
-    ["<leader>dpr"] = {
+    ["<leader>dp"] = {
       function()
         require('dap-python').test_method()
       end,
       "Run Python debugger",
+    }
+  }
+}
+
+M.rustaceanvim = {
+  plugin = true,
+  n = {
+    ["<leader>rd"] = {
+      "<cmd> RustLsp debuggables <CR>",
+      "Run Rust debuggables"
     }
   }
 }

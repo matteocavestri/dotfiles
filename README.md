@@ -3,6 +3,37 @@
 This directory contains the dotfiles for my system
 Read the docs
 
+## Features
+
+### Nvim
+
+- LSP
+  - C, C++
+  - Python
+  - Lua
+  - Rust
+  - Javascript, Typescript Tailwindcss
+- DAP
+  - C, C++
+  - Python
+  - Rust
+- color highlighting
+- git integrations
+- catpuccin theme
+
+### Tmux
+
+- catpuccin theme
+- zsh default
+
+### ZSH
+
+- git integration
+- color highlighting
+- zsh autocompletion
+- oh my zsh
+- zoxide --> cd-cdi (using fzf)
+
 ## Requirements
 
 Ensure you have the following installed on your system

@@ -112,6 +112,16 @@ local plugins = {
 		"christoomey/vim-tmux-navigator",
 		lazy = false,
 	},
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^4",
+    ft = { "rust" },
+    dependencies = "neovim/nvim-lspconfig",
+    config = function()
+      require "custom.configs.rustaceanvim"
+      require("core.utils").load_mappings("rustaceanvim")
+    end
+  },
 	{
 		"saecki/crates.nvim",
 		ft = { "toml" },
