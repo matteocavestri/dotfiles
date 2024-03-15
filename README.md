@@ -13,10 +13,12 @@ Read the docs
   - Lua
   - Rust
   - Javascript, Typescript Tailwindcss
+  - Go
 - DAP
   - C, C++
   - Python
   - Rust
+  - Go
 - color highlighting
 - git integrations
 - catpuccin theme

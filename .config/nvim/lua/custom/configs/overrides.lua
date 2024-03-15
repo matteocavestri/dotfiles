@@ -27,6 +27,12 @@ M.mason = {
     "mypy",
     "black",
     "debugpy",
+
+    -- go
+    "gopls",
+    "goimports-reviser",
+    "golines",
+    "gofumpt",
   },
 }
 
