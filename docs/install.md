@@ -50,7 +50,8 @@ curl -sS https://starship.rs/install.sh | sh # Starship
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Oh My zsh
 
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
+# This repo still uses NvChad-v2, the link is not valid
+# git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # TPM
 

@@ -57,7 +57,7 @@ mv ~/.config/btop ~/.config/btop.bak
 mv ~/.config/neofetch ~/.config/neofetch.bak
 mv ~/.config/htop ~/.config/htop.bak
 mv ~/.config/tmux ~/.config/tmux.bak
-mv ~/.config/nvim/lua/custom ~/.config/nvim/lua/custom.bak
+mv ~/.config/nvim/lua ~/.config/nvim/lua.bak
 mv ~/.bashrc.d ~/.bashrc.d.bak
 ```
 

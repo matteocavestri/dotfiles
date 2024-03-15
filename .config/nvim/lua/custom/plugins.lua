@@ -25,7 +25,7 @@ local plugins = {
 		opts = overrides.nvimtree,
 	},
 
-	-- DAP plugins (c,cpp,js,ts,rs)
+	-- DAP plugins (c,cpp,js,ts,rs,go,py)
 
 	{
 		"mfussenegger/nvim-dap",
