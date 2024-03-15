@@ -39,6 +39,10 @@ sudo pacman -Syu --noconfirm \
     git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep
 ```
 
+### Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
+
+Set it as the terminal font (required for NvChad themes)
+
 ### Install [Starship](https://starship.rs/), [Oh My zsh](https://ohmyz.sh/#install), [NvChad](https://nvchad.com/), [TPM](https://github.com/tmux-plugins/tpm) and [Zoxide](https://github.com/ajeetdsouza/zoxide)
 
 ```bash
@@ -53,4 +57,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # TPM
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash # Zoxide
 ```
 
-Install a [Nerd Font](https://www.nerdfonts.com/font-downloads) and set it as the terminal font (required for NvChad themes)
+### Install zsh plugins
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/tree/master)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/tree/master)
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting # zsh-syntax-highlighting
+```
