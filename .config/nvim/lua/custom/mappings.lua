@@ -98,5 +98,14 @@ M.gopher = {
   }
 }
 
+M.chatgpt = {
+  n = {
+    ["<leader>cg"] = {
+      "<cmd> ChatGPT <CR>",
+      "ChatGPT"
+    }
+  }
+}
+
 return M
 
