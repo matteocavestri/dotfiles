@@ -1,7 +1,6 @@
 # My dotfiles
 
 This directory contains the dotfiles for my system
-Read the docs
 
 ## Features
 
@@ -36,33 +35,30 @@ Read the docs
 - oh my zsh
 - zoxide --> cd-cdi (using fzf)
 
-## Requirements
-
-Ensure you have the following installed on your system
-
-### Git
-
-```
-pacman -S git
-dnf install git
-apt install git
-```
-
-### Stow
-
-```
-pacman -S stow
-dnf install stow
-apt install stow
-```
-
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+Install all dependencies as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
+
+Then, check out the dotfiles repo in your $HOME directory using git
 
 ```
 $ git clone https://github.com/matteocavestri/dotfiles.git
 $ cd dotfiles
+```
+
+Remove, or make a backup of the following files:
+
+Not all the directories indicated necessarily exist in your system.
+
+```bash
+mv ~/.bashrc ~/.bashrc.bak
+mv ~/.zshrc ~/.zshrc.bak
+mv ~/.config/btop ~/.config/btop.bak
+mv ~/.config/neofetch ~/.config/neofetch.bak
+mv ~/.config/htop ~/.config/htop.bak
+mv ~/.config/tmux ~/.config/tmux.bak
+mv ~/.config/nvim/lua/custom ~/.config/nvim/lua/custom.bak
+mv ~/.bashrc.d ~/.bashrc.d.bak
 ```
 
 then use GNU stow to create symlinks
@@ -70,3 +66,6 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
+
+To install all nvim dependencies, type `:MasonInstallAll`.
+To install all tmux plugins, use the shortcut `<C-b>I`, which is `<CTRL+b>+I`.

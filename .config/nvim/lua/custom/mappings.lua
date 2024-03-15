@@ -16,11 +16,11 @@ M.dap = {
       "<cmd> DapToggleBreakpoint <CR>",
       "Add breakpoint at line"
     },
-    ["<leader>dr"] = {
+    ["<leader>ds"] = {
       "<cmd> DapContinue <CR>",
       "Run or continue the debugger",
     },
-    ["<leader>ds"] = {
+    ["<leader>dus"] = {
       function ()
         local widgets = require('dap.ui.widgets');
         local sidebar = widgets.sidebar(widgets.scopes);
@@ -46,7 +46,7 @@ M.crates = {
 M.dap_python = {
   plugin = true,
   n = {
-    ["<leader>dp"] = {
+    ["<leader>dps"] = {
       function()
         require('dap-python').test_method()
       end,
@@ -58,7 +58,7 @@ M.dap_python = {
 M.rustaceanvim = {
   plugin = true,
   n = {
-    ["<leader>rd"] = {
+    ["<leader>drs"] = {
       "<cmd> RustLsp debuggables <CR>",
       "Run Rust debuggables"
     }
