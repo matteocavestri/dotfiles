@@ -1,49 +1,41 @@
 # Install guide
 
-This project uses the following packages:
+This project uses [Oh My ZSH](https://ohmyz.sh/), [Starship](https://starship.rs/), [NvChad](https://nvchad.com/), and the theme [Catpuccin](https://github.com/catppuccin/catppuccin).
+You can find all dependencies in the file [deps.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/deps.md).
+Thanks to all the projects that have made this repo possible.
 
-- Btop
-- Htop
-- ZSH
-  - Oh my zsh
-- Bash
-  - Starship
-- Nvim
-  - NvChad
-- Tmux
+## (1) Install dependencies
 
-## Install dependencies
+You can install the dependencies using the script [deps.sh](https://github.com/matteocavestri/dotfiles/blob/main/.scripts/deps.sh) or do it manually based on your package manager.
 
-Install system dependencies
-
-### Rhel based
+### Rhel based --> DNF
 
 ```bash
 sudo dnf update
 sudo dnf install -y \
-    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep
+    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass
 ```
 
-### Debian based
+### Debian based --> APT
 
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install -y \
-    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep
+    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass
 ```
 
-### Arch based
+### Arch based --> Pacman
 
 ```bash
 sudo pacman -Syu --noconfirm \
-    git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep
+    git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass
 ```
 
-### Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
+## (2) Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
 
 Set it as the terminal font (required for NvChad themes)
 
-### Install [Starship](https://starship.rs/), [Oh My zsh](https://ohmyz.sh/#install), [NvChad](https://nvchad.com/), [TPM](https://github.com/tmux-plugins/tpm) and [Zoxide](https://github.com/ajeetdsouza/zoxide)
+## (3) Install [Starship](https://starship.rs/), [Oh My zsh](https://ohmyz.sh/#install), [NvChad](https://nvchad.com/) and [TPM](https://github.com/tmux-plugins/tpm)
 
 ```bash
 curl -sS https://starship.rs/install.sh | sh # Starship
@@ -51,14 +43,14 @@ curl -sS https://starship.rs/install.sh | sh # Starship
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Oh My zsh
 
 # This repo still uses NvChad-v2, the link is not valid
-# git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
+# You can clone this repo without cloning Nvchad. The NvChadUpdate command will not work, but everything else works.
+# The migration to Nvchad v2.5 is in progress, it will be available soon.
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # TPM
-
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash # Zoxide
 ```
 
-### Install zsh plugins
+## (4) Install zsh plugins
 
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/tree/master)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/tree/master)
@@ -67,3 +59,45 @@ curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting # zsh-syntax-highlighting
 ```
+
+## (5) Clone the repo
+
+Check out the dotfiles repo in your $HOME directory using git
+It is recommended to use this repository as a starting point and then fork it and then clone it in order to have your own configuration based on this.
+
+```
+$ git clone https://github.com/matteocavestri/dotfiles.git
+$ cd dotfiles
+```
+
+## (6) Backup old configurations
+
+You can use the script [move.sh](https://github.com/matteocavestri/dotfiles/blob/main/.scripts/move.sh) or use the commands below.
+
+```bash
+mv ~/.bashrc ~/.bashrc.bak
+mv ~/.zshrc ~/.zshrc.bak
+mv ~/.config/btop ~/.config/btop.bak
+mv ~/.config/neofetch ~/.config/neofetch.bak
+mv ~/.config/htop ~/.config/htop.bak
+mv ~/.config/tmux ~/.config/tmux.bak
+mv ~/.config/nvim/lua ~/.config/nvim/lua.bak
+mv ~/.bashrc.d ~/.bashrc.d.bak
+mv ~/.config/starship.toml ~/.config/starship.toml.bak
+```
+
+## (7) Use stow to create symlinks
+
+Use stow to create symbolic links from the repository to your home directory.
+The command should be executed from the root of this repository.
+
+```bash
+stow .
+```
+
+## (8) Post install
+
+After installing everything, the TPM and Mason plugins need to be configured.
+
+To install all nvim dependencies, type `:MasonInstallAll` inside nvim.
+To install all tmux plugins, use the shortcut `<C-b>I`, which is `<CTRL+b>+I`.

@@ -1,71 +1,28 @@
 # My dotfiles
 
-This directory contains the dotfiles for my system
+This directory contains various dotfiles for configuring an entire work environment.
+Feel free to use this repo, create a fork, and use it as a starting point for your configuration.
 
-## Features
+Nvim is perfectly configured for the following languages.
 
-### Nvim
-
-- LSP
-  - C, C++
-  - Python
-  - Lua
-  - Rust
-  - Javascript, Typescript Tailwindcss
-  - Go
-- DAP
-  - C, C++
-  - Python
-  - Rust
-  - Go
-- color highlighting
-- git integrations
-- catpuccin theme
-
-### Tmux
-
-- catpuccin theme
-- zsh default
-
-### ZSH
-
-- git integration
-- color highlighting
-- zsh autocompletion
-- oh my zsh
-- zoxide --> cd-cdi (using fzf)
+| Language Server Protocol | Debug Adapter Protocol | WIP |
+| ------------------------ | ---------------------- | --- |
+| C                        | C                      |     |
+| C++                      | C++                    |     |
+| Python                   | Python                 |     |
+| Lua                      | //                     |     |
+| Rust                     | Rust                   |     |
+| Javascript               | Javascript             | X   |
+| Typescript               | Typescript             | X   |
+| Tailwindcss              | //                     |     |
+| Go                       | Go                     |     |
 
 ## Installation
 
-Install all dependencies as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
+Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
 
-Then, check out the dotfiles repo in your $HOME directory using git
+## Project Notes
 
-```
-$ git clone https://github.com/matteocavestri/dotfiles.git
-$ cd dotfiles
-```
+- The project still uses [NvChad v2](https://nvchad.com/news/v2.0_release), so cloning the Nvchad starter theme does not work at the current state. The porting to [Nvchad 2.5](https://nvchad.com/news/v2.5_release) is a work in progress.
 
-Remove, or make a backup of the following files:
-
-Not all the directories indicated necessarily exist in your system.
-
-```bash
-mv ~/.bashrc ~/.bashrc.bak
-mv ~/.zshrc ~/.zshrc.bak
-mv ~/.config/btop ~/.config/btop.bak
-mv ~/.config/neofetch ~/.config/neofetch.bak
-mv ~/.config/htop ~/.config/htop.bak
-mv ~/.config/tmux ~/.config/tmux.bak
-mv ~/.config/nvim/lua ~/.config/nvim/lua.bak
-mv ~/.bashrc.d ~/.bashrc.d.bak
-```
-
-then use GNU stow to create symlinks
-
-```
-$ stow .
-```
-
-To install all nvim dependencies, type `:MasonInstallAll`.
-To install all tmux plugins, use the shortcut `<C-b>I`, which is `<CTRL+b>+I`.
+- The Nvim configuration includes the plugin [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) which requires an API key from OpenAI. The plugin configuration requires the API key to be entered in the terminal password manager as `openai`.
