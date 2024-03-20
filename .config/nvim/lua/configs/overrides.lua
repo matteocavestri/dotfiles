@@ -12,8 +12,6 @@ M.mason = {
     "prettier",
     "js-debug-adapter",
     "tailwindcss-language-server",
-    "css-lsp",
-    "html-lsp",
 
     -- c/cpp stuff
     "clangd",

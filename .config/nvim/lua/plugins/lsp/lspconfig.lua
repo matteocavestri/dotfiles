@@ -1,37 +1,23 @@
-local configs = require("nvchad.configs.lspconfig")
-
-local on_attach = configs.on_attach
-local on_init = configs.on_init
-local capabilities = configs.capabilities
-
-local lspconfig = require "lspconfig"
+local on_attach = require("nvchad.configs.lspconfig").on_attach
+local on_init = require("nvchad.configs.lspconfig").on_init
+local capabilities = require("nvchad.configs.lspconfig").capabilities
 local util = require "lspconfig/util"
 
-local servers = { "tailwindcss", "eslint", "lua_ls", "cssls", "html"}
+local lspconfig = require "lspconfig"
+local servers = { "html", "cssls", "tailwindcss", "eslint" }
 
+-- lsps with default config
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    on_init = on_init,
     on_attach = on_attach,
+    on_init = on_init,
     capabilities = capabilities,
   }
 end
 
-lspconfig.tsserver.setup({
-  on_init = on_init,
-  on_attach = on_attach,
-  capabilities = capabilities,
-  init_options = {
-    preferences = {
-      disableSuggestions = true,
-    }
-  }
-})
-
 -- C, C++
 
 lspconfig.clangd.setup {
-  on_init = on_init,
   on_attach = function(client, bufnr)
     client.server_capabilities.signatureHelpProvider = false
     on_attach(client, bufnr)
@@ -39,22 +25,32 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
 }
 
--- Python
+-- Javascript, Typescript
 
-lspconfig.pyright.setup({
-  on_init =on_init,
+lspconfig.tsserver.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"python"},
-})
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    },
+  },
+}
+
+-- Python
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
+}
 
 -- Go
 
 lspconfig.gopls.setup {
-  on_init =on_init,
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = {"gopls"},
+  cmd = { "gopls" },
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
   settings = {
@@ -67,4 +63,3 @@ lspconfig.gopls.setup {
     },
   },
 }
-

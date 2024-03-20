@@ -1,12 +1,13 @@
-require("nvchad.mappings")
+require "nvchad.mappings"
 
 -- add yours here
 
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "jk", "<ESC>")
 
-map("i", "jk", "<ESC>", { desc = "Escape insert mode" })
+-- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 -- General key mappings
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
@@ -18,7 +19,7 @@ map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "window up" })
 map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "Add breakpoint at line" })
 map("n", "<leader>ds", "<cmd> DapContinue <CR>", { desc = "Run or continue the debugger" })
 map("n", "<leader>dus", function()
-  local widgets = require("dap.ui.widgets")
+  local widgets = require "dap.ui.widgets"
   local sidebar = widgets.sidebar(widgets.scopes)
   sidebar.open()
 end, { desc = "Open debugging sidebar" })
