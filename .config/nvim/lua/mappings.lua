@@ -51,3 +51,6 @@ map("n", "<leader>gsy", "<cmd> GoTagAdd yaml <CR>", { desc = "Add yaml struct ta
 
 -- ChatGPT key mappings
 map("n", "<leader>cg", "<cmd> ChatGPT <CR>", { desc = "ChatGPT" })
+
+-- Todo Comments mappings
+map("n", "<cmd>TodoTelescope<cr>", { desc = "Find Todos" })
