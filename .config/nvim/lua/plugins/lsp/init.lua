@@ -43,7 +43,7 @@ return {
 		})
 	end,
 	dependencies = {
-		-- NOTE: For Linting and Formatting
+
 		-- NOTE: Formatting
 		{
 			"stevearc/conform.nvim",
@@ -93,6 +93,25 @@ return {
 				registries = {
 					"github:nvim-java/mason-registry",
 					"github:mason-org/mason-registry",
+				},
+				ensure_installed = {
+					-- Formatters
+					"stylua",
+					"ruff",
+					"clang-format",
+					"gofumpt",
+					"yamlfmt",
+					"prettier",
+					-- Debugger
+					"cpptools",
+					"bash-debug-adapter",
+					"firefox-debug-adapter",
+					"java-debug-adapter",
+					"js-debug-adapter",
+					"node-debug2-adapter",
+					"debugpy",
+					"codelldb",
+					"go-debug-adapter",
 				},
 			},
 		},

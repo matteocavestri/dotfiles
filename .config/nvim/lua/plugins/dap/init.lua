@@ -103,7 +103,7 @@ return {
       "mfussenegger/nvim-dap",
       "rcarriga/nvim-dap-ui",
     },
-    config = function(_, opts)
+    config= function(_, opts)
       require("plugins.dap.dap-py")
     end,
   },
