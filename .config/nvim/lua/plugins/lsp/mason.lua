@@ -41,9 +41,6 @@ mason_lspconfig.setup({
 		-- go
 		"gopls",
 
-		-- CMake
-		"neocmake",
-
 		-- Java
 		"jdtls",
 
