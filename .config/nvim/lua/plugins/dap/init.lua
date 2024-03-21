@@ -1,8 +1,10 @@
+-- NOTE: Bisogna sistemare tutti i debugger e fare del test
+
 return {
   {
     "mfussenegger/nvim-dap",
     config = function(_, _)
-      require "plugins.dap.dap"
+      require("plugins.dap.dap")
     end,
   },
   {
@@ -24,7 +26,7 @@ return {
       "nvim-neotest/nvim-nio",
     },
     config = function()
-      require "plugins.dap.dap-ui"
+      require("plugins.dap.dap-ui")
     end,
   },
   {
@@ -35,7 +37,7 @@ return {
       "rcarriga/nvim-dap-ui",
     },
     config = function(_, opts)
-      require "plugins.dap.dap-py"
+      require("plugins.dap.dap-py")
     end,
   },
   {

@@ -1,4 +1,4 @@
-require "nvchad.mappings"
+require("nvchad.mappings")
 
 -- add yours here
 
@@ -19,7 +19,7 @@ map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "window up" })
 map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "Add breakpoint at line" })
 map("n", "<leader>ds", "<cmd> DapContinue <CR>", { desc = "Run or continue the debugger" })
 map("n", "<leader>dus", function()
-  local widgets = require "dap.ui.widgets"
+  local widgets = require("dap.ui.widgets")
   local sidebar = widgets.sidebar(widgets.scopes)
   sidebar.open()
 end, { desc = "Open debugging sidebar" })
@@ -53,4 +53,17 @@ map("n", "<leader>gsy", "<cmd> GoTagAdd yaml <CR>", { desc = "Add yaml struct ta
 map("n", "<leader>cg", "<cmd> ChatGPT <CR>", { desc = "ChatGPT" })
 
 -- Todo Comments mappings
-map("n", "<cmd>TodoTelescope<cr>", { desc = "Find Todos" })
+map("n", "<leader>fT", "<cmd>TodoTelescope<CR>", { desc = "Find Todos" })
+
+-- Markdown Preview
+map("n", "<leader>m", function()
+  if vim.bo.filetype == "markdown" then
+    vim.cmd("MarkdownPreviewToggle")
+  else
+    vim.notify("Only available in markdown", vim.log.levels.WARN, { title = "Markdown-Preview" })
+  end
+end, { desc = "Markdown Preview" })
+
+-- Compiler
+
+map("n", "<leader>cp", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })

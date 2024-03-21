@@ -2,7 +2,7 @@
 
 ### Neovim
 
-- javascript-typescript debugger
+TODO: Migrate nvchad
 
 ### ZSH
 

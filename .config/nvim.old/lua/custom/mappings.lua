@@ -1,12 +1,12 @@
 local M = {}
 
-M.general={
+M.general = {
   n = {
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
-  }
+  },
 }
 
 M.dap = {
@@ -14,33 +14,33 @@ M.dap = {
   n = {
     ["<leader>db"] = {
       "<cmd> DapToggleBreakpoint <CR>",
-      "Add breakpoint at line"
+      "Add breakpoint at line",
     },
     ["<leader>ds"] = {
       "<cmd> DapContinue <CR>",
       "Run or continue the debugger",
     },
     ["<leader>dus"] = {
-      function ()
-        local widgets = require('dap.ui.widgets');
-        local sidebar = widgets.sidebar(widgets.scopes);
-        sidebar.open();
+      function()
+        local widgets = require("dap.ui.widgets")
+        local sidebar = widgets.sidebar(widgets.scopes)
+        sidebar.open()
       end,
       "Open debugging sidebar",
-    }
-  }
+    },
+  },
 }
 
 M.crates = {
   plugin = true,
   n = {
     ["<leader>ru"] = {
-      function ()
-        require('crates').upgrade_all_crates()
+      function()
+        require("crates").upgrade_all_crates()
       end,
-      "update crates"
-    }
-  }
+      "update crates",
+    },
+  },
 }
 
 M.dap_python = {
@@ -48,11 +48,11 @@ M.dap_python = {
   n = {
     ["<leader>dps"] = {
       function()
-        require('dap-python').test_method()
+        require("dap-python").test_method()
       end,
       "Run Python debugger",
-    }
-  }
+    },
+  },
 }
 
 M.rustaceanvim = {
@@ -60,28 +60,27 @@ M.rustaceanvim = {
   n = {
     ["<leader>drs"] = {
       "<cmd> RustLsp debuggables <CR>",
-      "Run Rust debuggables"
-    }
-  }
+      "Run Rust debuggables",
+    },
+  },
 }
-
 
 M.dap_go = {
   plugin = true,
   n = {
     ["<leader>dgt"] = {
       function()
-        require('dap-go').debug_test()
+        require("dap-go").debug_test()
       end,
-      "Debug go test"
+      "Debug go test",
     },
     ["<leader>dgl"] = {
       function()
-        require('dap-go').debug_last()
+        require("dap-go").debug_last()
       end,
-      "Debug last go test"
-    }
-  }
+      "Debug last go test",
+    },
+  },
 }
 
 M.gopher = {
@@ -89,23 +88,22 @@ M.gopher = {
   n = {
     ["<leader>gsj"] = {
       "<cmd> GoTagAdd json <CR>",
-      "Add json struct tags"
+      "Add json struct tags",
     },
     ["<leader>gsy"] = {
       "<cmd> GoTagAdd yaml <CR>",
-      "Add yaml struct tags"
-    }
-  }
+      "Add yaml struct tags",
+    },
+  },
 }
 
 M.chatgpt = {
   n = {
     ["<leader>cg"] = {
       "<cmd> ChatGPT <CR>",
-      "ChatGPT"
-    }
-  }
+      "ChatGPT",
+    },
+  },
 }
 
 return M
-
