@@ -16,6 +16,15 @@ return {
         hover = {
           enabled = false,
         },
+        progress = {
+          enabled = false,
+          -- Lsp Progress is formatted using the builtins for lsp_progress. See config.format.builtin
+          -- See the section on formatting for more details on how to customize.
+          format = "lsp_progress",
+          format_done = "lsp_progress_done",
+          throttle = 1000 / 30, -- frequency to update lsp progress message
+          view = "mini",
+        },
       },
       -- you can enable a preset for easier configuration
       presets = {
@@ -25,7 +34,23 @@ return {
         inc_rename = false,       -- enables an input dialog for inc-rename.nvim
         lsp_doc_border = false,   -- add a border to hover docs and signature help
       },
+
+      routes = {
+        {
+          view = "notify",
+          filter = { event = "msg_showmode" },
+        },
+        {
+          filter = {
+            event = "msg_show",
+            kind = "",
+            find = "written",
+          },
+          opts = { skip = true },
+        },
+      },
     },
+
     dependencies = {
       -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
       "MunifTanjim/nui.nvim",
