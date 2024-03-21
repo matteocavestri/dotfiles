@@ -1,6 +1,6 @@
 -- plugins/ui/noice.lua
 
-local noice_options = {
+local ops = {
   lsp = {
     override = {
       ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
@@ -44,7 +44,7 @@ local noice_options = {
   },
 }
 
-return noice_options
+return ops
 
 --[[
 require("noice").setup({
