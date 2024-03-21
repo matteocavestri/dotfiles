@@ -62,7 +62,7 @@ case $distro in
   "ubuntu" | "debian")
     update_debian
     ;;
-  "fedora" | "centos" | "rhel")
+  "fedora" | "centos" | "rhel" | "fedora-asahi-remix")
     update_redhat
     ;;
   "arch")

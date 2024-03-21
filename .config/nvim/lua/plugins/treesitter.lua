@@ -1,0 +1,36 @@
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "c",
+        "markdown",
+        "markdown_inline",
+        "bash",
+        "rust",
+        "go",
+        "matlab",
+        "arduino",
+        "fortran",
+        "python",
+        "java",
+        "json",
+        "cpp",
+        "latex",
+        "vala",
+        "yaml",
+        "dockerfile",
+        "nix",
+      },
+    },
+  },
+}
+
