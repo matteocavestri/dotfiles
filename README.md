@@ -5,24 +5,23 @@ Feel free to use this repo, create a fork, and use it as a starting point for yo
 
 Nvim is perfectly configured for the following languages.
 
-| Language Server Protocol | Debug Adapter Protocol | WIP |
-| ------------------------ | ---------------------- | --- |
-| C                        | C                      |     |
-| C++                      | C++                    |     |
-| Python                   | Python                 |     |
-| Lua                      | //                     |     |
-| Rust                     | Rust                   |     |
-| Javascript               | Javascript             | X   |
-| Typescript               | Typescript             | X   |
-| Tailwindcss              | //                     |     |
-| Go                       | Go                     |     |
+| Language    | Language Server Protocol | Debug Adapter Protocol | Formatter    | WIP |
+| ----------- | ------------------------ | ---------------------- | ------------ | --- |
+| C           | clangd                   | codelldb               | clang-format | X   |
+| C++         | clangd                   | codelldb               | clang-format | X   |
+| Python      | pyright                  | debugpy                | ruff         |     |
+| Lua         | lua_ls                   | //                     | stylua       |     |
+| Rust        | rust-analyzer            | codelldb               | //           | X   |
+| Javascript  | tsserver                 | js-debug-adapter       | prettier     | X   |
+| Typescript  | tsserver                 | node-debug2-adapter    | prettier     | X   |
+| Tailwindcss | tailwindcss              | //                     | //           |     |
+| Go          | gopls                    | go-debug-adapter       | gofumpt      | X   |
+| Java        | jdtls                    | java-debug-adapter     | //           | X   |
 
 ## Installation
 
 Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
 
 ## Project Notes
-
-- The project still uses [NvChad v2](https://nvchad.com/news/v2.0_release), so cloning the Nvchad starter theme does not work at the current state. The porting to [Nvchad 2.5](https://nvchad.com/news/v2.5_release) is a work in progress.
 
 - The Nvim configuration includes the plugin [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) which requires an API key from OpenAI. The plugin configuration requires the API key to be entered in the terminal password manager as `openai`.

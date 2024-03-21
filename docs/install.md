@@ -42,9 +42,6 @@ curl -sS https://starship.rs/install.sh | sh # Starship
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Oh My zsh
 
-# This repo still uses NvChad-v2, the link is not valid
-# You can clone this repo without cloning Nvchad. The NvChadUpdate command will not work, but everything else works.
-# The migration to Nvchad v2.5 is in progress, it will be available soon.
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # TPM
