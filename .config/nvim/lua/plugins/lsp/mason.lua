@@ -46,6 +46,8 @@ mason_lspconfig.setup({
 
 		-- Yaml
 		"yamlls",
+
+		"bashls",
 	},
 })
 

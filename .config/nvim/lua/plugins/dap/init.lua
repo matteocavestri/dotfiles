@@ -28,7 +28,8 @@ return {
 				-- end
 
 				-- NOTE: Make sure to install the needed files/exectubles through mason
-				require("plugins.dap.settings.cpptools")
+
+				require("plugins.dap.settings.gdb")
 				require("plugins.dap.settings.bash-debug-adapter")
 				require("plugins.dap.settings.firefox-debug-adapter")
 				require("plugins.dap.settings.java-debug")

@@ -1,13 +1,9 @@
 require("nvchad.mappings")
 
 -- add yours here
-
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 local map = vim.keymap.set
-
-map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 
 -- General key mappings
 
@@ -15,19 +11,16 @@ map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window Left" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window Right" })
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window Down" })
 map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window Up" })
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "jk", "<ESC>")
 
 -- DAP
 
-map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { desc = "Dap Continue", silent = true })
-map("n", "<leader>do", "<cmd>lua require'dap'.step_over()<CR>", { desc = "Dap Step Over", silent = true })
-map("n", "<leader>di", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Dap Step Into", silent = true })
-map("n", "<leader>du", "<cmd>lua require'dap'.step_out()<CR>", { desc = "Dap Step Out", silent = true })
-map(
-	"n",
-	"<leader>db",
-	"<cmd>lua require'dap'.toggle_breakpoint()<CR>",
-	{ desc = "Dap Toggle Breakpoint", silent = true }
-)
+map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { desc = "Continue", silent = true })
+map("n", "<leader>do", "<cmd>lua require'dap'.step_over()<CR>", { desc = "Step Over", silent = true })
+map("n", "<leader>di", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Step Into", silent = true })
+map("n", "<leader>du", "<cmd>lua require'dap'.step_out()<CR>", { desc = "Step Out", silent = true })
+map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { desc = "Toggle Breakpoint", silent = true })
 map(
 	"n",
 	"<leader>dB",
@@ -35,7 +28,7 @@ map(
 	{ desc = "Breakpoint Condition", silent = true }
 )
 map("n", "<leader>dd", "<cmd>lua require'dapui'.toggle()<CR>", { desc = "Dap UI", silent = true })
-map("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Dap Run Last", silent = true })
+map("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Run Last", silent = true })
 
 -- ChatGPT key mappings
 
@@ -56,7 +49,18 @@ end, { desc = "Markdown Preview" })
 
 -- Compiler
 
-map("n", "<leader>rr", "<cmd>CompilerRedo<CR>", { desc = "Compiler Redo Last Action", silent = true })
+map("n", "<leader>rr", "<cmd>CompilerRedo<CR>", { desc = "Redo Last Action", silent = true })
 map("n", "<leader>ro", "<cmd>CompilerOpen<CR>", { desc = "Compiler Open", silent = true })
-map("n", "<leader>rs", "<cmd>CompilerStop<CR>", { desc = "Compiler Stop All Tasks", silent = true })
-map("n", "<leader>rt", "<cmd>CompilerToggleResults<CR>", { desc = "Compiler Toggle Results", silent = true })
+map("n", "<leader>rs", "<cmd>CompilerStop<CR>", { desc = "Stop All Tasks", silent = true })
+map("n", "<leader>rt", "<cmd>CompilerToggleResults<CR>", { desc = "Toggle Results", silent = true })
+
+-- Lspsaga
+
+map("n", "<leader>la", "<cmd>Lspsaga code_action<CR>", { desc = "Code Action", silent = true })
+map("v", "<leader>la", "<cmd>Lspsaga code_action<CR>", { desc = "Code Action", silent = true })
+map("n", "<leader>lo", "<cmd>Lspsaga outline<CR>", { desc = "Code Outline", silent = true })
+map("n", "<leader>lI", "<cmd>Lspsaga incoming_calls<CR>", { desc = "Incoming Calls", silent = true })
+map("n", "<leader>lO", "<cmd>Lspsaga outgoing_calls<CR>", { desc = "Outgoing Calls", silent = true })
+map("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", { desc = "Rename", silent = true })
+map("n", "<leader>lj", "<cmd>Lspsaga diagnostic_jump_next<CR>", { desc = "Next Diagnostic", silent = true })
+map("n", "<leader>lk", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { desc = "Prev Diagnostic", silent = true })
