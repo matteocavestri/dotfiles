@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias update="bash $HOME/.scripts/update.sh"
 alias status="bash $HOME/.scripts/status.sh"
+alias commands="bash $HOME/.scripts/help.sh"
 #
 #
 # eval "$(starship init zsh)"
