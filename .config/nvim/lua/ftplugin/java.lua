@@ -1,3 +1,5 @@
+-- jdtls configuration is now on ftplugin/java.lua
+
 local home = vim.env.HOME
 local jdtls_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls/"
 local equinox_version = "1.6.400.v20210924-0641"
@@ -53,4 +55,3 @@ return {
 		workspace_dir,
 	},
 }
--- return {}

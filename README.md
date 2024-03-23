@@ -7,8 +7,8 @@ Nvim is perfectly configured for the following languages.
 
 | Language    | Language Server Protocol | Debug Adapter Protocol | Formatter     | WIP |
 | ----------- | ------------------------ | ---------------------- | ------------- | --- |
-| C           | clangd                   | gdb                    | clang-format  |     |
-| C++         | clangd                   | gdb                    | clang-format  |     |
+| C           | clangd (x86 only)        | gdb                    | clang-format  |     |
+| C++         | clangd (x86 only)        | gdb                    | clang-format  |     |
 | Python      | pyright                  | debugpy                | ruff          |     |
 | Lua         | lua_ls                   | //                     | stylua        |     |
 | Rust        | rust-analyzer            | gdb                    | rust-analyzer |     |
