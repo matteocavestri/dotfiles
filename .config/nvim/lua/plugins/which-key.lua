@@ -18,7 +18,7 @@ return {
 					r = { name = " Runner" },
 					--         s = { name = "󰔚 Sessions" },
 					f = { name = " Find" },
-					--         g = { name = "󰊢 Git" },
+					g = { name = "󰊢 Git" },
 					--         h = { name = " Harpoon" },
 					l = { name = " LSP" },
 					--         n = { name = " Neovim" },

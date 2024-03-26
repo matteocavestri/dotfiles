@@ -64,3 +64,12 @@ map("n", "<leader>lO", "<cmd>Lspsaga outgoing_calls<CR>", { desc = "Outgoing Cal
 map("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", { desc = "Rename", silent = true })
 map("n", "<leader>lj", "<cmd>Lspsaga diagnostic_jump_next<CR>", { desc = "Next Diagnostic", silent = true })
 map("n", "<leader>lk", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { desc = "Prev Diagnostic", silent = true })
+
+-- Neogit
+
+map("n", "<leader>gn", "<cmd>Neogit<CR>", { desc = "Neogit" })
+map("n", "<leader>gc", "<cmd>Neogit commit<CR>", { desc = "Neogit Commit" })
+
+-- Telescope
+
+map("n", "<leader>gm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope commits" })

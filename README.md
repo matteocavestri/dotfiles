@@ -36,18 +36,18 @@ The Obsidian plugin requires [Obsidian](https://obsidian.md/) Obsidian to be ins
 ```lua
 -- Modify the directory
 event = {
-	"BufReadPre " .. vim.fn.expand("~") .. "/vaults/second-brain/**.md",
-	"BufNewFile " .. vim.fn.expand("~") .. "/vaults/second-brain/**.md",
+  "BufReadPre " .. vim.fn.expand("~") .. "/vaults/second-brain/**.md",
+  "BufNewFile " .. vim.fn.expand("~") .. "/vaults/second-brain/**.md",
 },
 
 -- Modify the name and directory
 opts = {
-	workspaces = {
-		{
-			name = "second-brain",
-    		path = "~/vaults/second-brain",
-		},
-	},
+  workspaces = {
+    {
+      name = "second-brain",
+      path = "~/vaults/second-brain",
+    },
+  },
 ... -- Configuration continues
 }
 ```
