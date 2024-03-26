@@ -1,5 +1,3 @@
--- jdtls configuration is now on ftplugin/java.lua
-
 local home = vim.env.HOME
 local jdtls_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls/"
 local equinox_version = "1.6.400.v20210924-0641"
@@ -24,8 +22,7 @@ local workspace_dir = WORKSPACE_PATH .. project_name
 return {
 	cmd = {
 		-- 💀
-		"java", -- or '/path/to/java17_or_newer/bin/java'
-		-- depends on if `java` is in your $PATH env variable and if it points to the right version.
+		"java", -- or '/path/to/java17_or_newer/bin/java'		-- depends on if `java` is in your $PATH env variable and if it points to the right version.
 
 		"-Declipse.application=org.eclipse.jdt.ls.core.id1",
 		"-Dosgi.bundles.defaultStartLevel=4",
