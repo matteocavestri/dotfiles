@@ -65,10 +65,12 @@ map("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", { desc = "Rename", silent = tr
 map("n", "<leader>lj", "<cmd>Lspsaga diagnostic_jump_next<CR>", { desc = "Next Diagnostic", silent = true })
 map("n", "<leader>lk", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { desc = "Prev Diagnostic", silent = true })
 
--- Neogit
+-- Neogit - diffview
 
 map("n", "<leader>gn", "<cmd>Neogit<CR>", { desc = "Neogit" })
 map("n", "<leader>gc", "<cmd>Neogit commit<CR>", { desc = "Neogit Commit" })
+map("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "Open DiffView" })
+map("n", "<leader>gD", "<cmd>DiffviewClose<CR>", { desc = "Close DiffView" })
 
 -- Telescope
 

@@ -6,7 +6,7 @@ return {
 			"sindrets/diffview.nvim",
 			"nvim-telescope/telescope.nvim",
 		},
-		cmd = "Neogit",
+		cmd = { "Neogit", "DiffviewOpen" },
 		config = function()
 			require("neogit").setup({
 				kind = "vsplit", -- opens neogit in a split
