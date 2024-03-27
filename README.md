@@ -15,7 +15,7 @@ Nvim is perfectly configured for the following languages.
 | Javascript  | tsserver                 | js-debug-adapter       | prettier      | X   |
 | Typescript  | tsserver                 | node-debug2-adapter    | prettier      | X   |
 | Tailwindcss | tailwindcss              | //                     | //            |     |
-| Go          | gopls                    | go-debug-adapter       | gofumpt       | X   |
+| Go          | gopls                    | go-debug-adapter       | gofumpt       |     |
 | Java        | jdtls                    | java-debug-adapter     | //            | X   |
 | Bash        | bashls                   | bash-debug-adapter     | //            |     |
 
