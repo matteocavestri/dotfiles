@@ -15,7 +15,7 @@ mkdir .compile
 cd .compile
 git clone https://github.com/eclipse-jdtls/eclipse.jdt.ls.git
 cd eclipse.jdt.ls
-JAVA_HOME=/usr/bin/java ./mvnw clean verify -DskipTests=true
+JAVA_HOME=/usr ./mvnw clean verify -DskipTests=true
 ```
 
 ## Create a symlink for jdtls
