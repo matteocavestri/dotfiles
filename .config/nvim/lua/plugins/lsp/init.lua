@@ -71,6 +71,7 @@ return {
 				},
 			},
 		},
+
 		-- NOTE: Package installer
 		{
 			"williamboman/mason.nvim",
@@ -100,6 +101,7 @@ return {
 					"ruff",
 					"clang-format",
 					"gofumpt",
+					"goimports",
 					"yamlfmt",
 					"prettier",
 					-- Debugger
