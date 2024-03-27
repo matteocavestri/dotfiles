@@ -108,6 +108,7 @@ alias update="bash $HOME/.scripts/update.sh"
 alias status="bash $HOME/.scripts/status.sh"
 alias commands="bash $HOME/.scripts/commands-list.sh"
 alias tx="tmux new -s"
+alias ta="tmux a -t"
 #
 #
 # eval "$(starship init zsh)"

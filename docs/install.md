@@ -98,3 +98,29 @@ After installing everything, the TPM and Mason plugins need to be configured.
 
 To install all nvim dependencies, type `:MasonInstallAll` inside nvim.
 To install all tmux plugins, use the shortcut `<C-b>I`, which is `<CTRL+b>+I`.
+
+## (9) Install optional packages
+
+### [LazyGit](https://github.com/jesseduffield/lazygit)
+
+**Fedora - RHEL Based**
+
+```bash
+sudo dnf copr enable atim/lazygit -y
+sudo dnf install lazygit
+```
+
+**ArchLinux**
+
+```bash
+sudo pacman -S lazygit
+```
+
+**Debian - Ubuntu**
+
+```bash
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+```
