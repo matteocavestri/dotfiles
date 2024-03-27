@@ -124,3 +124,7 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 ```
+
+### Jdtls --> Java Language Server
+
+Read [jtdls.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/jdtls.md)

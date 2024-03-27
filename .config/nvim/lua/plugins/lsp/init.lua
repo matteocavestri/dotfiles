@@ -71,6 +71,11 @@ return {
 				},
 			},
 		},
+		-- NOTE: For Java
+		{
+			"mfussenegger/nvim-jdtls",
+			ft = "java",
+		},
 
 		-- NOTE: Package installer
 		{
