@@ -25,9 +25,11 @@ Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/
 
 ## Project Notes
 
-#### OpenAI
+#### AI
 
 The Nvim configuration includes the plugin [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) which requires an API key from OpenAI. The plugin configuration requires the API key to be entered in the terminal password manager as `openai`.
+
+Among the AI plugins is [Codeium](https://codeium.com/) for which an account is required. If you have an account, use the command `:Codeium Auth` and paste the API key to log in.
 
 #### Obsidian
 
