@@ -3,7 +3,7 @@ local formatters = {
 	python = { "ruff" },
 	cpp = { "clang_format" },
 	c = { "clang_format" },
-	go = { "gofumpt" },
+	go = { "gofumpt", "goimports" },
 	yaml = { "yamlfmt" },
 }
 
