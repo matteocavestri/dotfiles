@@ -13,10 +13,10 @@ Nvim is perfectly configured for the following languages.
 | Lua         | lua_ls                   | //                     | stylua        |     |
 | Rust        | rust-analyzer            | gdb                    | rust-analyzer |     |
 | Javascript  | tsserver                 | js-debug-adapter       | prettier      |     |
-| Typescript  | tsserver                 | node-debug2-adapter    | prettier      |     |
+| Typescript  | tsserver                 | js-debug-adapter       | prettier      |     |
 | Tailwindcss | tailwindcss              | //                     | //            |     |
 | Go          | gopls                    | go-debug-adapter       | gofumpt       |     |
-| Java        | jdtls                    | java-debug-adapter     | //            | X   |
+| Java        | jdtls                    | java-debug-adapter     | jdtls         | X   |
 | Bash        | bashls                   | bash-debug-adapter     | //            |     |
 
 ## Installation
