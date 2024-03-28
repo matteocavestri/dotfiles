@@ -33,7 +33,6 @@ return {
 				require("plugins.dap.settings.bash-debug-adapter")
 				require("plugins.dap.settings.firefox-debug-adapter")
 				require("plugins.dap.settings.java-debug")
-				require("plugins.dap.settings.node-debug2")
 				require("plugins.dap.settings.debugpy")
 				require("plugins.dap.settings.go-debug-adapter")
 				require("plugins.dap.settings.js-debug")
