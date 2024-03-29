@@ -79,6 +79,8 @@ mv ~/.config/tmux ~/.config/tmux.bak
 mv ~/.config/nvim/ ~/.config/nvim.bak
 mv ~/.bashrc.d ~/.bashrc.d.bak
 mv ~/.config/starship.toml ~/.config/starship.toml.bak
+mv ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak
+
 ```
 
 ## (7) Use stow to create symlinks
