@@ -35,14 +35,12 @@ sudo pacman -Syu --noconfirm \
 
 Set it as the terminal font (required for NvChad themes)
 
-## (3) Install [Starship](https://starship.rs/), [Oh My zsh](https://ohmyz.sh/#install), [NvChad](https://nvchad.com/) and [TPM](https://github.com/tmux-plugins/tpm)
+## (3) Install [Starship](https://starship.rs/), [Oh My zsh](https://ohmyz.sh/#install) and [TPM](https://github.com/tmux-plugins/tpm)
 
 ```bash
 curl -sS https://starship.rs/install.sh | sh # Starship
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Oh My zsh
-
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # NvChad
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # TPM
 ```
@@ -78,7 +76,7 @@ mv ~/.config/btop ~/.config/btop.bak
 mv ~/.config/neofetch ~/.config/neofetch.bak
 mv ~/.config/htop ~/.config/htop.bak
 mv ~/.config/tmux ~/.config/tmux.bak
-mv ~/.config/nvim/lua ~/.config/nvim/lua.bak
+mv ~/.config/nvim/ ~/.config/nvim.bak
 mv ~/.bashrc.d ~/.bashrc.d.bak
 mv ~/.config/starship.toml ~/.config/starship.toml.bak
 ```
