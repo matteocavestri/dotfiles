@@ -16,7 +16,7 @@ dap.adapters.go = function(callback, config)
 			print("dlv exited with code", code)
 		end
 	end)
-	assert(handle, "Errore durante l'avvio di dlv: " .. tostring(pid_or_err))
+	assert(handle, "Error starting dlv: " .. tostring(pid_or_err))
 	stdout:read_start(function(err, chunk)
 		assert(not err, err)
 		if chunk then
