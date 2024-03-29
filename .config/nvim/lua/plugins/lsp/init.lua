@@ -117,6 +117,7 @@ return {
 					"node-debug2-adapter",
 					"debugpy",
 					"go-debug-adapter",
+					"delve",
 				},
 			},
 		},
