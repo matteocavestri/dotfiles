@@ -4,6 +4,11 @@ require("nvchad.mappings")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 local map = vim.keymap.set
+local nomap = vim.keymap.del
+
+-- Delete Mappings
+nomap("n", "<leader>pt")
+nomap("n", "<leader>th")
 
 -- General key mappings
 
@@ -75,3 +80,5 @@ map("n", "<leader>gD", "<cmd>DiffviewClose<CR>", { desc = "Close DiffView" })
 -- Telescope
 
 map("n", "<leader>gm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope commits" })
+map("n", "<leader>ft", "<cmd>Telescope themes<CR>", { desc = "Telescope find themes" })
+map("n", "<leader>fm", "<cmd>Telescope terms<CR>", { desc = "Telescope pick hidden term" })

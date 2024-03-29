@@ -16,10 +16,10 @@ return {
 				["<leader>"] = {
 					d = { name = "󰃤 Debugger" },
 					r = { name = " Runner" },
-					--         s = { name = "󰔚 Sessions" },
+					c = { name = "󰔚 Miscellaneous" },
 					f = { name = " Find" },
 					g = { name = "󰊢 Git" },
-					--         h = { name = " Harpoon" },
+					w = { name = " Whichkey" },
 					l = { name = " LSP" },
 					--         n = { name = " Neovim" },
 					--         o = { name = " Options" },
