@@ -12,15 +12,15 @@ else
 fi
 
 install_with_apt() {
-    sudo apt update && sudo apt install -y git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb delve
+    sudo apt update && sudo apt install -y git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb
 }
 
 install_with_dnf() {
-    sudo dnf install -y git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb delve
+    sudo dnf install -y git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb
 }
 
 install_with_pacman() {
-    sudo pacman -Syu --noconfirm git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass gdb delve
+    sudo pacman -Syu --noconfirm git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass gdb
 }
 
 # Check the distribution and choose the package manager

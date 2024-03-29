@@ -26,7 +26,7 @@ move_if_exists ~/.config/btop ~/.config/btop.bak
 move_if_exists ~/.config/neofetch ~/.config/neofetch.bak
 move_if_exists ~/.config/htop ~/.config/htop.bak
 move_if_exists ~/.config/tmux ~/.config/tmux.bak
-move_if_exists ~/.config/nvim/lua ~/.config/nvim/lua.bak
+move_if_exists ~/.config/nvim ~/.config/nvim.bak
 move_if_exists ~/.bashrc.d ~/.bashrc.d.bak
 move_if_exists ~/.config/starship.toml ~/.config/starship.toml.bak
 
