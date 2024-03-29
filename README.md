@@ -19,6 +19,12 @@ Nvim is perfectly configured for the following languages.
 | Java        | jdtls                    | java-debug-adapter     | jdtls         | X   |
 | Bash        | bashls                   | bash-debug-adapter     | //            |     |
 
+Ecco alcune immagini dimostrative:
+
+![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim.png?raw=true)
+
+![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim-debug.png?raw=true)
+
 ## Installation
 
 Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
