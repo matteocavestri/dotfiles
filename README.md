@@ -3,6 +3,8 @@
 This directory contains various dotfiles for configuring an entire work environment.
 Feel free to use this repo, create a fork, and use it as a starting point for your configuration.
 
+## Neovim Features
+
 Nvim is perfectly configured for the following languages.
 
 | Language    | Language Server Protocol | Debug Adapter Protocol | Formatter     |
@@ -19,15 +21,7 @@ Nvim is perfectly configured for the following languages.
 | Java        | jdtls                    | java-debug-adapter     | jdtls         |
 | Bash        | bashls                   | bash-debug-adapter     | //            |
 
-Here are some demonstrative images:
-
-**Neovim**
-![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim.png?raw=true)
-
-**Neovim Debug**
-![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim-debug.png?raw=true)
-
-## Features
+To see the behavior of neovim with all languages, read [neovim.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/neovim.md)
 
 - **Plugin Management**: Efficiently manage plugins with [lazy.nvim](https://github.com/folke/lazy.nvim).
 - **Compiler**: Compile your code with [compiler.nvim](https://github.com/Zeioth/compiler.nvim).
@@ -41,6 +35,16 @@ Here are some demonstrative images:
 - **Git Integration**: Effortlessly manage Git repositories with [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) and [lazygit](https://github.com/jesseduffield/lazygit).
 - **Keymap Cheatsheet**: Quickly reference keymaps with [which-key.nvim](https://github.com/folke/which-key.nvim).
 - **Markdown Preview**: Preview your Markdown files with [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim).
+
+Here are some demonstrative images:
+
+**Neovim**
+
+![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim.png?raw=true)
+
+**Neovim Debug**
+
+![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim-debug.png?raw=true)
 
 ## Installation
 
