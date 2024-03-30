@@ -35,6 +35,7 @@ To install gdb, use the package manager of your distribution. Follow [install.md
 | Typescript | js-debug           |
 | Go         | go-debug-adapter   |
 | Bash       | bash-debug-adapter |
+| Java       | java-debug-adapter |
 
 ## Formatters
 
