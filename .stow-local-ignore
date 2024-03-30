@@ -24,3 +24,4 @@ _darcs
 # Custom
 docs
 screenshot
+.config/lazygit/state.yml
