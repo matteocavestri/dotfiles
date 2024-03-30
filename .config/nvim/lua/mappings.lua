@@ -1,4 +1,4 @@
-require("nvchad.mappings")
+require "nvchad.mappings"
 
 -- add yours here
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
@@ -27,10 +27,10 @@ map("n", "<leader>di", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Step I
 map("n", "<leader>du", "<cmd>lua require'dap'.step_out()<CR>", { desc = "Step Out", silent = true })
 map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { desc = "Toggle Breakpoint", silent = true })
 map(
-	"n",
-	"<leader>dB",
-	"<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>",
-	{ desc = "Breakpoint Condition", silent = true }
+  "n",
+  "<leader>dB",
+  "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>",
+  { desc = "Breakpoint Condition", silent = true }
 )
 map("n", "<leader>dd", "<cmd>lua require'dapui'.toggle()<CR>", { desc = "Dap UI", silent = true })
 map("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Run Last", silent = true })
@@ -45,11 +45,11 @@ map("n", "<leader>fT", "<cmd>TodoTelescope<CR>", { desc = "Find Todos" })
 
 -- Markdown Preview
 map("n", "<leader>m", function()
-	if vim.bo.filetype == "markdown" then
-		vim.cmd("MarkdownPreviewToggle")
-	else
-		vim.notify("Only available in markdown", vim.log.levels.WARN, { title = "Markdown-Preview" })
-	end
+  if vim.bo.filetype == "markdown" then
+    vim.cmd "MarkdownPreviewToggle"
+  else
+    vim.notify("Only available in markdown", vim.log.levels.WARN, { title = "Markdown-Preview" })
+  end
 end, { desc = "Markdown Preview" })
 
 -- Compiler
@@ -82,3 +82,8 @@ map("n", "<leader>gD", "<cmd>DiffviewClose<CR>", { desc = "Close DiffView" })
 map("n", "<leader>gm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope commits" })
 map("n", "<leader>ft", "<cmd>Telescope themes<CR>", { desc = "Telescope find themes" })
 map("n", "<leader>fm", "<cmd>Telescope terms<CR>", { desc = "Telescope pick hidden term" })
+
+-- CodeSnap
+
+map("v", "<leader>s", ":<C-U>CodeSnap<CR>", { noremap = true, silent = true, desc = "Save CodeSnap in clipboard" })
+map("v", "<leader>S", ":<C-U>CodeSnapSave<CR>", { noremap = true, silent = true, desc = "Save CodeSnap in ~/.snap" })
