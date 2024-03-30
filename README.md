@@ -1,9 +1,9 @@
-# My dotfiles
+# My dotfiles 🧭
 
 This directory contains various dotfiles for configuring an entire work environment.
-Feel free to use this repo, create a fork, and use it as a starting point for your configuration.
+Feel free to use this repo, create a fork, and use it as a starting point for your setup.
 
-## Neovim Features
+## Neovim Features 🚀
 
 Nvim is perfectly configured for the following languages.
 
@@ -21,7 +21,7 @@ Nvim is perfectly configured for the following languages.
 | Java        | jdtls                    | java-debug-adapter     | jdtls         |
 | Bash        | bashls                   | bash-debug-adapter     | //            |
 
-To see the behavior of neovim with all languages, read [neovim.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/neovim.md)
+**To see the behavior of neovim with all languages, read [neovim.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/neovim.md)**
 
 - **Plugin Management**: Efficiently manage plugins with [lazy.nvim](https://github.com/folke/lazy.nvim).
 - **Compiler**: Compile your code with [compiler.nvim](https://github.com/Zeioth/compiler.nvim).
@@ -36,27 +36,23 @@ To see the behavior of neovim with all languages, read [neovim.md](https://githu
 - **Keymap Cheatsheet**: Quickly reference keymaps with [which-key.nvim](https://github.com/folke/which-key.nvim).
 - **Markdown Preview**: Preview your Markdown files with [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim).
 
-Here are some demonstrative images:
+Here are some examples:
 
-**Neovim**
+| Neovim 🌟                                                                                              | Neovim Debug 🐞                                                                                                    |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| ![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim.png?raw=true) | ![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/java-debug.png?raw=true) |
 
-![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim.png?raw=true)
-
-**Neovim Debug**
-
-![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/screenshot/nvim-debug.png?raw=true)
-
-## Installation
+## Installation 💻
 
 Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
 
-## Project Notes
+## Project Notes 🗒️
 
 #### AI
 
 The Nvim configuration includes the plugin [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) which requires an API key from OpenAI. The plugin configuration requires the API key to be entered in the terminal password manager as `openai`.
 
-Among the AI plugins is [Codeium](https://codeium.com/) for which an account is required. If you have an account, use the command `:Codeium Auth` and paste the API key to log in.
+Among the AI plugins there is [Codeium](https://codeium.com/) which requires an account. If you have one, use the command `:Codeium Auth` and paste the API key to log in.
 
 #### Obsidian
 
@@ -80,3 +76,9 @@ opts = {
 ... -- Configuration continues
 }
 ```
+
+## Acknowledgements and License 🖖
+
+Thanks to the [Nvchad](https://nvchad.com/) project and its community, [Alexis12199](https://github.com/Alexis12119) and [DreamsOfCode](https://github.com/dreamsofcode-io).
+
+The software is made available under the GNU-GPL-V3 license. Please read [LICENSE](https://github.com/matteocavestri/dotfiles/blob/main/LICENSE) for more information about the license.

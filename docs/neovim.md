@@ -1,6 +1,6 @@
-# Neovim Capabilities
+# Neovim Capabilities 🌟
 
-## Language Server Protocol
+## Language Server Protocol 📜
 
 | Language    | LSP                  |
 | ----------- | -------------------- |
@@ -19,7 +19,7 @@
 | Yaml        | yamlls               |
 | Tailwindcss | tailwindcss          |
 
-## Debug Adapter Protocol
+## Debug Adapter Protocol 🐞
 
 All debuggers are configured through Mason except `gdb`
 
@@ -37,7 +37,7 @@ To install gdb, use the package manager of your distribution. Follow [install.md
 | Bash       | bash-debug-adapter |
 | Java       | java-debug-adapter |
 
-## Formatters
+## Formatters 🖊️
 
 | Language        | Formatter          |
 | --------------- | ------------------ |
@@ -60,7 +60,7 @@ To install gdb, use the package manager of your distribution. Follow [install.md
 | typescriptreact | Prettier           |
 | vue             | Prettier           |
 
-## Linters
+## Linters 🐛
 
 | Language | Linter |
 | -------- | ------ |
