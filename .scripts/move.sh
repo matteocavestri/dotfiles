@@ -30,3 +30,5 @@ move_if_exists ~/.config/nvim ~/.config/nvim.bak
 move_if_exists ~/.bashrc.d ~/.bashrc.d.bak
 move_if_exists ~/.config/starship.toml ~/.config/starship.toml.bak
 move_if_exists ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak
+move_if_exists ~/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml.bak
+move_if_exists ~/.zsh ~/.zsh.bak
