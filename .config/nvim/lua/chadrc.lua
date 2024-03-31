@@ -28,6 +28,7 @@ M.ui = {
   tabufline = {
     lazyload = true,
     overriden_modules = nil,
+    order = { "treeOffset", "buffers", "tabs" },
   },
   hl_override = {
     Comment = { italic = true },
