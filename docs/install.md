@@ -13,7 +13,7 @@ You can install the dependencies using the script [deps.sh](https://github.com/m
 ```bash
 sudo dnf update
 sudo dnf install -y \
-    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb eza
+    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb eza bat
 ```
 
 ### Debian based --> APT
@@ -21,14 +21,14 @@ sudo dnf install -y \
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install -y \
-    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb eza
+    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb eza bat
 ```
 
 ### Arch based --> Pacman
 
 ```bash
 sudo pacman -Syu --noconfirm \
-    git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass gdb eza
+    git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass gdb eza bat
 ```
 
 ## 2️⃣ Install a [Nerd Font](https://www.nerdfonts.com/font-downloads)
@@ -82,6 +82,8 @@ mv ~/.config/starship.toml ~/.config/starship.toml.bak
 mv ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak
 mv ~/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml.bak
 mv ~/.zsh ~/.zsh.bak
+mv ~/.config/bat ~/.config/bat.bak
+
 ```
 
 ## 7️⃣ Use stow to create symlinks
