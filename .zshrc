@@ -5,6 +5,7 @@ sh $HOME/.scripts/commands-list.sh
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -109,6 +110,8 @@ alias status="bash $HOME/.scripts/status.sh"
 alias commands="bash $HOME/.scripts/commands-list.sh"
 alias tx="tmux new -s"
 alias ta="tmux a -t"
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
 #
 #
 # eval "$(starship init zsh)"
