@@ -42,9 +42,9 @@ Nvim is perfectly configured for the following languages.
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | ![Neovim](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/nvim.png?raw=true) | ![Neovim Debug](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/java-debug.png?raw=true) |
 
-| Tmux                                                                                            | Lazygit                                                                                               |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [Tmux](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/tmux.png?raw=true) | [Lazygit](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/lazygit.png?raw=true) |
+| Tmux 🌟                                                                                          | Lazygit 🐞                                                                                             |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| ![Tmux](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/tmux.png?raw=true) | ![Lazygit](https://raw.githubusercontent.com/matteocavestri/dotfiles/main/assets/lazygit.png?raw=true) |
 
 ## Installation 💻
 
