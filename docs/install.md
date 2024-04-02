@@ -13,7 +13,7 @@ You can install the dependencies using the script [deps.sh](https://github.com/m
 ```bash
 sudo dnf update
 sudo dnf install -y \
-    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb eza bat
+    git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb eza bat libuv libuv-devel
 ```
 
 ### Debian based --> APT

@@ -3,7 +3,7 @@ local home = os.getenv "HOME"
 return {
   {
     "mistricky/codesnap.nvim",
-    build = "make",
+    build = "make build_generator",
     version = "^1",
     lazy = "true",
     cmd = {

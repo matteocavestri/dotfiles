@@ -86,3 +86,7 @@ opts = {
 Thanks to the [Nvchad](https://nvchad.com/) project and its community, [Alexis12199](https://github.com/Alexis12119) and [DreamsOfCode](https://github.com/dreamsofcode-io).
 
 The software is made available under the GNU-GPL-V3 license. Please read [LICENSE](https://github.com/matteocavestri/dotfiles/blob/main/LICENSE) for more information about the license.
+
+## TODOs
+
+- Update docs --> CodeSnap compilation
