@@ -87,3 +87,9 @@ map("n", "<leader>fm", "<cmd>Telescope terms<CR>", { desc = "Telescope pick hidd
 
 map("v", "<leader>s", ":<C-U>CodeSnap<CR>", { noremap = true, silent = true, desc = "Save CodeSnap in clipboard" })
 map("v", "<leader>S", ":<C-U>CodeSnapSave<CR>", { noremap = true, silent = true, desc = "Save CodeSnap in ~/.snap" })
+
+-- Obsidian
+
+map("n", "<leader>oo", "<cmd>ObsidianOpen<CR>", { desc = "Obsidian open" })
+map("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "Obsidian new" })
+map("n", "<leader>ot", "<cmd>ObsidianTemplate<CR>", { desc = "Obsidian template" })
