@@ -1,4 +1,5 @@
 # --------------- CALLING CONFIGS ---------------
+
 palette = "catppuccin_mocha"
 format = '$all'
 
