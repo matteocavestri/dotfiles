@@ -16,6 +16,9 @@ disabled = false
 [hostname]
 ssh_symbol = " "
 
+[container]
+format = '[$symbol \[$name\]]($style) '
+
 [memory_usage]
 symbol = "󰍛 "
 
