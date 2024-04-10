@@ -83,7 +83,10 @@ mv ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak
 mv ~/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml.bak
 mv ~/.zsh ~/.zsh.bak
 mv ~/.config/bat ~/.config/bat.bak
-
+mv ~/.themes ~/.themes.bak
+mv ~/.icons ~/.icons.bak
+mv ~/.wallpapers ~/.wallpapers.bak
+mv ~/.config/gtk-4.0 ~/.config/gtk-4.0.bak
 ```
 
 ## 7️⃣ Use stow to create symlinks
