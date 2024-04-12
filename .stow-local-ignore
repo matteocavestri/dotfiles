@@ -25,3 +25,5 @@ _darcs
 docs
 assets
 .config/lazygit/state.yml
+Dockerfile.ARM64
+DOckerfile.x86_64

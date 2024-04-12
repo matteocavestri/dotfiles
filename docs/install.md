@@ -21,7 +21,7 @@ sudo dnf install -y \
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install -y \
-    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb eza bat
+    git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb eza bat libtool libuv1-dev
 ```
 
 ### Arch based --> Pacman

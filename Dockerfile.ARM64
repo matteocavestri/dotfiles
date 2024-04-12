@@ -1,0 +1,35 @@
+FROM alpine:latest
+
+RUN apk update && \
+  apk add --no-cache \
+  git \
+  nodejs \
+  npm \
+  neovim \
+  build-base \
+  python3 \
+  rust \
+  cargo \
+  wget \
+  curl \
+  fzf \
+  ripgrep \
+  go \
+  pass \
+  gdb \
+  libuv-dev \
+  pkgconfig \
+  make \
+  automake \
+  clang
+
+RUN wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.22.2/tree-sitter-linux-arm64.gz && \
+  gunzip tree-sitter-linux-arm64.gz && \
+  mv tree-sitter-linux-arm64 /usr/local/bin/tree-sitter && \
+  chmod +x /usr/local/bin/tree-sitter
+
+COPY .config/nvim /root/.config/nvim
+
+COPY .scripts/entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
