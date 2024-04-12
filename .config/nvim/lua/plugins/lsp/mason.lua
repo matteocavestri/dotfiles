@@ -51,6 +51,10 @@ mason_lspconfig.setup {
 
     -- Matlab
     "matlab_ls",
+
+    -- Docker
+    "dockerls",
+    "docker_compose_language_service",
   },
 }
 
