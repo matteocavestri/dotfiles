@@ -1,12 +1,10 @@
-FROM alpine:latest
+FROM fedora:rawhide
 
-RUN apk update && \
-  apk add --no-cache \
+RUN dnf -y update && dnf -y install \
   git \
   nodejs \
-  npm \
   neovim \
-  build-base \
+  @development-tools \
   python3 \
   rust \
   cargo \
@@ -14,14 +12,12 @@ RUN apk update && \
   curl \
   fzf \
   ripgrep \
-  go \
+  golang \
   pass \
   gdb \
-  libuv-dev \
-  pkgconfig \
-  make \
-  automake \
-  clang
+  libuv \
+  libuv-devel \
+  && dnf clean all
 
 RUN wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.22.2/tree-sitter-linux-x64.gz && \
   gunzip tree-sitter-linux-x64.gz && \
@@ -30,6 +26,6 @@ RUN wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.22.2/tr
 
 COPY .config/nvim /root/.config/nvim
 
-COPY entrypoint.sh /usr/local/bin/
+COPY .scripts/entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
