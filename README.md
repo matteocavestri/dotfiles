@@ -85,6 +85,12 @@ Nvim is perfectly configured for the following languages.
 
 ## Installation 💻
 
+You can install my dotfiles using my install script
+
+```bash
+curl -sSL https://github.com/matteocavestri/dotfiles/blob/main/.scripts/install.sh | bash
+```
+
 Install as explained in [install.md](https://github.com/matteocavestri/dotfiles/blob/main/docs/install.md)
 
 ## Project Notes 🗒️

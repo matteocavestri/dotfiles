@@ -47,6 +47,7 @@ mason_lspconfig.setup {
     -- Yaml
     "yamlls",
 
+    --Bash
     "bashls",
 
     -- Matlab
