@@ -58,37 +58,32 @@ move_if_exists() {
 }
 
 
-read -p "Do you really want to install the dotfiles? (y/n) " answer
-if [ "$answer" == "y" ]; then
-  detect_distro
-  install_deps
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  (curl -sS https://starship.rs/install.sh | sh) || {
-    echo "Starship installation failed"
-    exit 1
-  } 
-  install_nerd_font
-  check_existence
-  move_if_exists ~/.bashrc ~/.bashrc.bak # Backup bash
-  move_if_exists ~/.zshrc ~/.zshrc.bak # Backup zsh
-  move_if_exists ~/.config/btop ~/.config/btop.bak # Backup btop
-  move_if_exists ~/.config/neofetch ~/.config/neofetch.bak # Backup neofetch
-  move_if_exists ~/.config/htop ~/.config/htop.bak # Backup htop
-  move_if_exists ~/.config/tmux ~/.config/tmux.bak # Backup Tmux
-  move_if_exists ~/.config/nvim ~/.config/nvim.bak # Backup neovim
-  move_if_exists ~/.bashrc.d ~/.bashrc.d.bak # Backup bash aliases
-  move_if_exists ~/.config/starship.toml ~/.config/starship.toml.bak # Backup starship
-  move_if_exists ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak # Backup lazygit
-  move_if_exists ~/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml.bak # Backup alacritty
-  move_if_exists ~/.zsh ~/.zsh.bak # Backup .zsh
-  move_if_exists ~/.config/bat ~/.config/bat.bak # Backup bat 
-  cd $HOME
-  git clone https://github.com/matteocavestri/dotfiles.git 
-  cd dotfiles
-  stow .
-  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions # zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting # zsh-syntax-highlighting
-else
-    exit
- fi
+detect_distro
+install_deps
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+(curl -sS https://starship.rs/install.sh | sh) || {
+  echo "Starship installation failed"
+  exit 1
+} 
+install_nerd_font
+check_existence
+move_if_exists ~/.bashrc ~/.bashrc.bak # Backup bash
+move_if_exists ~/.zshrc ~/.zshrc.bak # Backup zsh
+move_if_exists ~/.config/btop ~/.config/btop.bak # Backup btop
+move_if_exists ~/.config/neofetch ~/.config/neofetch.bak # Backup neofetch
+move_if_exists ~/.config/htop ~/.config/htop.bak # Backup htop
+move_if_exists ~/.config/tmux ~/.config/tmux.bak # Backup Tmux
+move_if_exists ~/.config/nvim ~/.config/nvim.bak # Backup neovim
+move_if_exists ~/.bashrc.d ~/.bashrc.d.bak # Backup bash aliases
+move_if_exists ~/.config/starship.toml ~/.config/starship.toml.bak # Backup starship
+move_if_exists ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.bak # Backup lazygit
+move_if_exists ~/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml.bak # Backup alacritty
+move_if_exists ~/.zsh ~/.zsh.bak # Backup .zsh
+move_if_exists ~/.config/bat ~/.config/bat.bak # Backup bat 
+cd $HOME
+git clone https://github.com/matteocavestri/dotfiles.git 
+cd dotfiles
+stow .
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions # zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting # zsh-syntax-highlighting
 
