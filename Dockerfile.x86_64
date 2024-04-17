@@ -1,10 +1,12 @@
-FROM fedora:rawhide
+FROM alpine:latest
 
-RUN dnf -y update && dnf -y install \
+RUN apk update && \
+  apk add --no-cache \
   git \
   nodejs \
+  npm \
   neovim \
-  @development-tools \
+  build-base \
   python3 \
   rust \
   cargo \
@@ -12,12 +14,15 @@ RUN dnf -y update && dnf -y install \
   curl \
   fzf \
   ripgrep \
-  golang \
+  go \
   pass \
   gdb \
-  libuv \
-  libuv-devel \
-  && dnf clean all
+  libuv-dev \
+  pkgconfig \
+  make \
+  automake \
+  clang \
+  clang-dev
 
 RUN wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.22.2/tree-sitter-linux-x64.gz && \
   gunzip tree-sitter-linux-x64.gz && \
