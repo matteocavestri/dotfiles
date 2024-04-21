@@ -18,7 +18,7 @@ case $DISTRO in
         sudo apt update && sudo apt install -y git nodejs btop neofetch neovim zsh tmux build-essential python3 rustc stow wget curl fzf ripgrep golang zoxide pass gdb eza bat 
         ;;
     fedora|centos|rhel|fedora-asahi-remix)
-        sudo dnf install git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust stow wget curl fzf ripgrep go zoxide pass gdb eza bat
+        sudo dnf install git nodejs btop neofetch neovim zsh tmux @development-tools python3 rust cargo stow wget curl fzf ripgrep go zoxide pass gdb eza bat
         ;;
     arch|manjaro)
         sudo pacman -Syu git base-devel python nodejs neofetch neovim zsh tmux rust stow wget curl btop fzf ripgrep go zoxide pass gdb eza bat 
