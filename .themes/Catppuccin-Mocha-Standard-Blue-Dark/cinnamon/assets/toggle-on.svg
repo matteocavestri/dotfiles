@@ -4,7 +4,7 @@
    <feGaussianBlur stdDeviation="0.81"/>
   </filter>
  </defs>
- <rect width="46" height="24" rx="12" ry="12" fill="#1e66f5" stroke-width="0" style="paint-order:stroke fill markers"/>
+ <rect width="46" height="24" rx="12" ry="12" fill="#89b4fa" stroke-width="0" style="paint-order:stroke fill markers"/>
  <circle cx="34" cy="13" r="9" fill="#000000" filter="url(#filter898)" opacity=".15" stroke-width="0" style="paint-order:stroke fill markers"/>
  <circle cx="34" cy="12" r="9" fill="#ffffff" stroke-width="0" style="paint-order:stroke fill markers"/>
 </svg>
