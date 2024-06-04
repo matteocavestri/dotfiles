@@ -29,9 +29,10 @@ end
 
 return {
   format_on_save = {
-    --   -- These options will be passed to conform.format()
-    async = true,
-    quiet = true,
+    lsp_fallback = true,
+    timeout_ms = 500,
+  },
+  format_after_save = {
     lsp_fallback = true,
   },
   formatters_by_ft = formatters,
